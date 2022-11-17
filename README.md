@@ -14,15 +14,15 @@ The code for training GPEC is located in ./GPEC
 The experiment code is located in ./Tests
 
 ## Setup
-Due to file size constraints, the datasets must be downloaded separately and the models must be trained. For convenience, the data and model files for the census experiments have been uploaded to the Github repository. Other datasets can be downloaded from Pytorch (MNIST and f-MNIST) or from the UCI data repository. To train the black-box models used in the experiments section, the code is located in ./Tests/Models/blackbox_model_training
+Due to file size constraints, the datasets must be downloaded separately and the models must be trained. For convenience, the data and model files for the census and cos experiments have been uploaded to the Github repository. Other datasets can be downloaded from Pytorch (MNIST and f-MNIST) or from the UCI data repository. To train the black-box models used in the experiments section, the code is located in ./Tests/Models/blackbox_model_training
 
-In addition, the following repositories should be downloaded (optional -- used for explainer comparisons in the experiments). In the folder one level above GPEC_Anonymous_Code, download the following repositories:
+In addition, the following repositories should be downloaded (optional -- used for explainer comparisons in the experiments). In the folder one level above GPEC_CODE, download the following repositories:
 * **Modeling-Uncertainty-Local-Explainability** (Used for BayesLIME and BayesSHAP algorithms) https://github.com/dylan-slack/Modeling-Uncertainty-Local-Explainability
 * **cxplain** (CXPlain algorithm) https://github.com/d909b/cxplain
 * **BivariateShapley** (Used for Shapley Sampling Values algorithm) https://github.com/davinhill/BivariateShapley
 
 ## Uncertainty Figures (Figure 4)
-These experiments estimate the uncertainty for a grid of test samples, which are visualized as a heatmap in Figure 4. The code is located in ./Tests/uncertaintyfigure/a_kernel_test_rev2.py. Running this file will save the results in ./Files/Results. Note that for performance reasons, the Decision Boundary samples and EG kernel matrix is precomputed in this experiment. The files for Census dataset can be downloaded from https://github.com/anonymousGPEC/GPEC. The files for other datasets can be calculated in ./Tests/Models/blackbox_model_training  
+These experiments estimate the uncertainty for a grid of test samples, which are visualized as a heatmap in Figure 4. The code is located in ./Tests/uncertaintyfigure/a_kernel_test_rev2.py. Running this file will save the results in ./Files/Results. Note that for performance reasons, the Decision Boundary samples and EG kernel matrix is precomputed in this experiment. The files for Census dataset and Cos toy dataset are already uploaded in the repository (./Files/Models). The files for other datasets can be calculated in ./Tests/Models/blackbox_model_training  
 
 
 
